@@ -9,4 +9,6 @@ RUN add-pkg software-properties-common && \
     add-apt-repository ppa:obsproject/obs-studio && \
     add-pkg ffmpeg obs-studio
 
+ENV KEEP_APP_RUNNING=1
+
 COPY startapp.sh /startapp.sh
